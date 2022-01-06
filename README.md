@@ -1,6 +1,8 @@
-# Ask Mike
+# Dbadmin setup
 
-A Command line utility to set up dbadmin 
+A Command line utility to set up dbadmin
+
+TODO: Provide a link to dbadmin documentation
 
 ## Why?
 
@@ -8,17 +10,18 @@ Because I write useful code (at least for me), and want to install it in all of 
 
 ## Getting started
 
+You don't need to install this to your project, in fact it's easier not too, just use npx, as it checks for the latest version and will always use that
+
 ```
-npm install -g dbadmin-setup  # Install globally, not to the project
-dbadmin-setup collections   # Generates code for dbadmin
+cd <your-meteor-project>
+npx dbadmin-setup collections .   # Generates collections code for dbadmin
 ```
 
 # Available Commands
 
-| Command  | Purpose                                   |
-| -------- | ----------------------------------------- |
-| collections       | generates code |
-
+| Command     | Purpose        |
+| ----------- | -------------- |
+| collections | generates code |
 
 # Development
 
