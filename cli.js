@@ -2,29 +2,21 @@
 
 const chalk = require('chalk')
 const fs = require('fs')
-const debug = require('debug')('askmike:cli')
+const debug = require('debug')('dbadmin:cli')
 
-const getip = require('./lib/ip')
-const cfgCheck = require('./lib/cfg-check')
-const doczGen = require('./lib/docz-gen')
+const collections = require('./lib/collections')
 
 const dispatch = (target, opts) => {
   let errors = []
   switch (target) {
-    case 'ip':
-      const addresses = getip(opts)
-      console.error(`IP Addresses: \n${addresses.join('\n')}`)
-      break
-    case 'cfg-check':
-      errors = cfgCheck.checkAll(opts)
-      // No output - command will do its own
-      break
-    case 'docz-gen':
-      errors = doczGen.generate(opts)
+    case 'collections':
+      errors = collections(opts)
       // No output - command will do its own
       break
     default:
-      console.error("Please provide a command as a parameter, eg 'ip' or 'cfg-check', or 'docz-gen'")
+      console.error(
+        "Please provide a command as a parameter, eg 'ip' or 'cfg-check', or 'docz-gen'"
+      )
       process.exit(1)
       break
   }

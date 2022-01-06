@@ -1,6 +1,6 @@
 # Ask Mike
 
-A Command line utility to do stuff
+A Command line utility to set up dbadmin 
 
 ## Why?
 
@@ -9,16 +9,15 @@ Because I write useful code (at least for me), and want to install it in all of 
 ## Getting started
 
 ```
-npm install -g askmike  # Install globally, not to the project
-askmike ip   # Prints your ip address
+npm install -g dbadmin-setup  # Install globally, not to the project
+dbadmin-setup collections   # Generates code for dbadmin
 ```
 
 # Available Commands
 
 | Command  | Purpose                                   |
 | -------- | ----------------------------------------- |
-| cfg-check | Check your settings, proxies, .npmrc etc  |
-| ip       | Show all ip addresses and interface names |
+| collections       | generates code |
 
 
 # Development

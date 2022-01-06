@@ -1,35 +1,38 @@
 {
-  "name": "askmike",
-  "version": "1.2.2",
-  "description": "Ask Mike for help",
+  "name": "dbadmin-setup",
+  "version": "1.0.0",
+  "description": "DB admin utilities",
   "main": "cli.js",
   "scripts": {
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikkelking/askmike.git"
+    "url": "git+https://github.com/Back2bikes/dbadmin-setup.git"
   },
   "keywords": [
-    "swiss",
-    "army",
-    "knife",
+    "meteor",
+    "dbadmin",
+    "mongo",
     "cli"
   ],
   "bin": {
-    "askmike": "./cli.js",
-    "ask-mike": "./cli.js"
+    "dbadmin-setup": "./cli.js"
   },
   "author": "Mike King",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^2.4.2",
-    "debug": "^4.1.1",
-    "minimist": "^1.2.0",
+    "chalk": "4",
+    "change-case": "^4.1.2",
+    "debug": "^4.3.3",
+    "minimist": "^1.2.5",
     "os": "^0.1.1",
+    "prettier": "^2.5.1",
     "rc": "^1.2.8",
     "recursive-readdir": "^2.2.2",
-    "terminal-image": "^0.1.2"
+    "terminal-image": "^0.1.2",
+    "title-case": "^3.0.3",
+    "yarn": "^1.22.17"
   },
   "devDependencies": {
     "child_process": "^1.0.2",
