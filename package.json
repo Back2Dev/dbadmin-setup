@@ -1,6 +1,6 @@
 {
   "name": "dbadmin-setup",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "DB admin utilities",
   "main": "cli.js",
   "scripts": {
@@ -26,6 +26,7 @@
     "change-case": "^4.1.2",
     "debug": "^4.3.3",
     "minimist": "^1.2.5",
+    "mkpath": "^1.0.0",
     "os": "^0.1.1",
     "prettier": "^2.5.1",
     "rc": "^1.2.8",

@@ -14,9 +14,7 @@ const dispatch = (target, opts) => {
       // No output - command will do its own
       break
     default:
-      console.error(
-        "Please provide a command as a parameter, eg 'ip' or 'cfg-check', or 'docz-gen'"
-      )
+      console.error("Please provide a command as a parameter, eg 'collections'")
       process.exit(1)
       break
   }
