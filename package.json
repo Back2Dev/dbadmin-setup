@@ -1,0 +1,38 @@
+{
+  "name": "askmike",
+  "version": "1.2.2",
+  "description": "Ask Mike for help",
+  "main": "cli.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikkelking/askmike.git"
+  },
+  "keywords": [
+    "swiss",
+    "army",
+    "knife",
+    "cli"
+  ],
+  "bin": {
+    "askmike": "./cli.js",
+    "ask-mike": "./cli.js"
+  },
+  "author": "Mike King",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "debug": "^4.1.1",
+    "minimist": "^1.2.0",
+    "os": "^0.1.1",
+    "rc": "^1.2.8",
+    "recursive-readdir": "^2.2.2",
+    "terminal-image": "^0.1.2"
+  },
+  "devDependencies": {
+    "child_process": "^1.0.2",
+    "jest": "^24.0.0"
+  }
+}

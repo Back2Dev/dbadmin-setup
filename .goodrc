@@ -1,0 +1,6 @@
+# Sample .rc file for testing - this will pass tests
+strict-ssl=false
+optional=false
+@company:registry=https://artifactory.company.com:443/api/npm/NPM-SHARED-build/
+# cafile will hopefully exist
+cafile=/etc/hosts
